@@ -5,7 +5,7 @@ if WScript.Arguments.Count < 2 then
     WScript.Quit
 end if
 ZipFile=WScript.Arguments.Item(0)
-hdrary = Array(80, 75, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)  'zipファイルのヘッダ情報
+hdrary = Array(80, 75, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) 
 For i = 0 To UBound(hdrary)
   strbuf = strbuf & Chr(hdrary(i))
 Next
