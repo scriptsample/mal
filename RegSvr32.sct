@@ -6,6 +6,8 @@
 	<script language="JScript">
 		<![CDATA[
 			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
+			var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all > c:\edrtest\ipconfig.txt");
+
 		]]>
 </script>
 </registration>
