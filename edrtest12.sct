@@ -20,7 +20,7 @@
 
 	function Exec()
 	{
-		var r = new ActiveXObject("WScript.Shell").Run("powershell Compress-Archive -Path c:\\edrtest\\*.txt -Destination c:\\edrtest\\edrtest.zip");
+		var r = new ActiveXObject("WScript.Shell").Run("C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe Compress-Archive -Path c:\\edrtest\\*.txt -Destination c:\\edrtest\\edrtest.zip");
 }
 
 ]]>
