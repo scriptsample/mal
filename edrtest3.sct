@@ -1,12 +1,10 @@
 <?XML version="1.0"?>
 <scriptlet>
-  <!-- EDR Test -->
-
 <registration
     description="aaa"
     progid="aaa"
     version="1.00"
-    classid="{VVVV2222-0000-0000-0000-0000AAAAAAAA}"
+    classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
 	>
 
 </registration>
