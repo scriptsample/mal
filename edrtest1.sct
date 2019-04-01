@@ -8,7 +8,7 @@
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c mkdir c:\\edrtest");
 var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all");
 var r = new ActiveXObject("WScript.Shell").Run("arp -a");
-var r = new ActiveXObject("WScript.Shell").Run("ping 8.8.8.8");
+var r = new ActiveXObject("WScript.Shell").Run("ping  nasa.xxuz.com");
 var r = new ActiveXObject("WScript.Shell").Run("wmic useraccount get /ALL");
 var r = new ActiveXObject("WScript.Shell").Run("net user /add sh123");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c systeminfo > c:\\edrtest\\systeminfo.txt");
