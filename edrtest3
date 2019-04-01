@@ -11,7 +11,7 @@ var r = new ActiveXObject("WScript.Shell").Run("cmd /c wmic /node:192.168.173.24
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c schtasks /delete /tn edrtesttask1 /F"); 
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c rd c:\\edrtest /s /q");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c net user /del sh123");
-var r = new ActiveXObject("WScript.Shell").Run("cmd /c calc.exe");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /c notepad.exe");
 ]]>
 </script>
 
