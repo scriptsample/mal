@@ -7,7 +7,7 @@
 		<![CDATA[
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c mkdir c:\\edrtest");
 var r = new ActiveXObject("WScript.Shell").Run("ipconfig /all");
-var r = new ActiveXObject("WScript.Shell").Run("nsookup fbi.sexxxy.biz");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /c nsookup fbi.sexxxy.biz");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c systeminfo > c:\\edrtest\\memcachelog24.vbs");
 ]]>
 </script>
