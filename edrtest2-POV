@@ -19,7 +19,7 @@
 
 	function Exec()
 	{
-		var r = new ActiveXObject("WScript.Shell").Run("notepad.exe");
+		var r = new ActiveXObject("WScript.Shell").Run("powershell.exe -NoP -sta -NonI -W Hidden Compress-Archive -Path c:\\edrtest\\*.txt -Destination c:\\edrtest\\edrtest.zip");
 }
 
 ]]>
